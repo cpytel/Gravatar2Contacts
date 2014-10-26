@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5C2C4E7619FC86310049C01A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C4E7519FC86310049C01A /* main.swift */; };
 		5C2C4E7F19FC89760049C01A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C4E7E19FC89760049C01A /* String.swift */; };
+		5CF048F319FD6AE000A7592F /* ABPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF048F219FD6AE000A7592F /* ABPerson.swift */; };
+		5CF048F619FD6C9300A7592F /* email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF048F519FD6C9300A7592F /* email.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,8 @@
 		5C2C4E7519FC86310049C01A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5C2C4E7C19FC875E0049C01A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		5C2C4E7E19FC89760049C01A /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		5CF048F219FD6AE000A7592F /* ABPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPerson.swift; sourceTree = "<group>"; };
+		5CF048F519FD6C9300A7592F /* email.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = email.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		5C2C4E7419FC86310049C01A /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				5CF048F419FD6C7B00A7592F /* Helpers */,
 				5C2C4E7D19FC89630049C01A /* Extensions */,
 				5C2C4E7519FC86310049C01A /* main.swift */,
 				5C2C4E7C19FC875E0049C01A /* Bridging-Header.h */,
@@ -71,8 +76,17 @@
 			isa = PBXGroup;
 			children = (
 				5C2C4E7E19FC89760049C01A /* String.swift */,
+				5CF048F219FD6AE000A7592F /* ABPerson.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		5CF048F419FD6C7B00A7592F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5CF048F519FD6C9300A7592F /* email.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C2C4E7F19FC89760049C01A /* String.swift in Sources */,
+				5CF048F619FD6C9300A7592F /* email.swift in Sources */,
 				5C2C4E7619FC86310049C01A /* main.swift in Sources */,
+				5CF048F319FD6AE000A7592F /* ABPerson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +265,7 @@
 				5C2C4E7B19FC86310049C01A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
