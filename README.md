@@ -1,4 +1,4 @@
 Gravatar2Contacts
 =================
 
-Add Gravatar Images to OS X Contacts
+Adds Gravatar Images to OS X Contacts
