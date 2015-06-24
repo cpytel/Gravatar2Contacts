@@ -9,7 +9,7 @@
 import Foundation
 
 extension String {
-    func md5() -> String! {
+    func md5() -> String {
         let str = self.cStringUsingEncoding(NSUTF8StringEncoding)
         let strLen = CUnsignedInt(self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))
         let digestLen = Int(CC_MD5_DIGEST_LENGTH)
@@ -17,13 +17,13 @@ extension String {
         
         CC_MD5(str!, strLen, result)
         
-        var hash = NSMutableString()
+        let hash = NSMutableString()
         for i in 0..<digestLen {
             hash.appendFormat("%02x", result[i])
         }
         
         result.destroy()
         
-        return String(format: hash)
+        return hash as String
     }
 }
