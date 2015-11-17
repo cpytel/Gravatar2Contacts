@@ -10,14 +10,8 @@ the email address for the contact.
 
 To run it, open the project in XCode and Run.
 
+The program will only query Gravatars for contacts without image. As a result, already set images (manual or previous runs) will be kept.
 If no Gravatar is found for a contact it does not change the image.
-
-However, if any Gravatar is found for a contact, it will replace the existing
-image. In other words, we always use the latest image from Gravatar.
-
-This has the side effect that if you change an image for a contact, run this
-program, and they have a different Gravatar, your custom image will be
-overwritten.
 
 ### Known Issues
 
