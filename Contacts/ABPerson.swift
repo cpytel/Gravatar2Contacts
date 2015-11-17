@@ -22,12 +22,4 @@ extension ABPerson {
         return self.valueForProperty(kABEmailProperty) as! ABMultiValue?
     }
 
-    func setImageDataFromURL(optionalURL: NSURL?) {
-        if let url = optionalURL {
-            let data = NSData(contentsOfURL: url)
-            if data != nil {
-                self.setImageData(data)
-            }
-        }
-    }
 }
