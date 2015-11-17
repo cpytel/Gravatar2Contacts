@@ -10,7 +10,7 @@ import Foundation
 import AddressBook
 
 let addressbook = ABAddressBook()
-let people = addressbook.people() as [ABPerson]
+let people = addressbook.people() as! [ABPerson]
 
 for person in people {
     if let emails = person.emails() {
